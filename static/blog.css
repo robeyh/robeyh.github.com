@@ -4,3 +4,7 @@ body {
   background-repeat: no-repeat;
   font-family: 'Poly', serif;
 }
+
+h3.posttitle {
+  border-bottom: 4px dotted black;
+}
