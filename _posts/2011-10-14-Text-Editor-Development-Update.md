@@ -4,9 +4,12 @@ layout: post
 title: Text Editor Development Update
 
 published: false
+
 ---
 
-Need some graphics / explanation of components:
+First of all, let's start off with a [screenshot of what the rendering test looks like in Chrome](/images/2011/10/14/shadertest3.png).
+
+This is a 4MB file (UTF-32, so equivalent to 1MB of ASCII).
 
 ## Font Rendering and Text Layout in WebGL
 
@@ -28,6 +31,9 @@ more flexibility as to positioning, but all of that positioning would have to be
 the JavaScript and uploaded to the graphics card for each change.  By using the fragment
 shader I use 6 vertices to outline the page then each pixel determines which letter it is,
 where in the letter it is and what color that location of the letter is.
+
+## Font Loading
+
 
 
 ## Syntax Highlighting
