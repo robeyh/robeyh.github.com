@@ -63,11 +63,11 @@ body {
 .postcontent {
   width: 75ex;
   float: right;
-  font-family: 'Alice', serif;
+  font-family: 'AurulentSans', 'AurulentSansRegular', sans-serif;
 }
 
 .postcontent h2 {
-  font-family: 'AurulentSans', 'AurulentSansRegular', sans-serif;
+  font-family: 'Alice', serif;
 }
 
 .postfooter {
@@ -84,8 +84,8 @@ body {
 }
 
 h1.posttitle {
-  /*font-family: 'Alice', serif;*/
-  font-family: 'AurulentSans', 'AurulentSansRegular', sans-serif;
+  font-family: 'Alice', serif;
+  /*font-family: 'AurulentSans', 'AurulentSansRegular', sans-serif;*/
   border-bottom: 5px ridge white;
   margin-top: 0px;
 }
