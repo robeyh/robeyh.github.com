@@ -40,8 +40,7 @@ Vim has a very large set of runtime files using it's internal command system.  O
 
 This has the side-effect of meaning that the command mode for the editor will accept either vim commands (assuming that a conversion exists) as well as javascript macros.  This will be done through a simple construct + algorithm: 
 
-```javascript
-
+```
 syntax = {
   keyword: function( groupName, keywords ){
     //function to run for command
