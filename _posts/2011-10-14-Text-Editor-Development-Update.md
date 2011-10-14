@@ -17,9 +17,10 @@ This is a test in which a 4MB file (UTF-32, so equivalent to 1MB of ASCII) is lo
 
 The bulk of my effort so far has been here.  I've built multiple experiments trying to find a good simple way to offload as much of the work of rendering the fonts to the GPU.  I've got a good one.  The text is converted to a texture with each pixel representing a letter.   An additional texture is necessary to encode the location of line breaks.  The benefit of doing it this way is that a pixel provides 32 bits of storage, so I can do UTF-32 as well as highlighting information in the same pixel.  This is as UTF-32 only actually uses 21 bits per character.  
 
-I then load up a font texture (which is just a standard bitmap font) using 
+I then load up a font texture (which is just a standard bitmap font) which I wrote a little library to create on the fly (next section).  A text texture, which is basically a copy of the file contents directly into memory and a newline texture, which maps line numbers to positions in the text texture.
 
 All of this loading stuff into textures means that the rendering can all be done in the fragment shader.  The first thought, and what many bitmap font renderers seem to do is to store all of the information in the vertex arrays.  This means that 6 vertices are needed for every letter and I'd need to duplicate information a lot.  It would give me more flexibility as to positioning, but all of that positioning would have to be done in the JavaScript and uploaded to the graphics card for each change.  By using the fragment shader I use 6 vertices to outline the page then each pixel determines which letter it is, where in the letter it is and what color that location of the letter is.  
+
 
 ## Font Loading
 
@@ -32,7 +33,9 @@ I was originally split between doing more formal parsing of the text, which woul
 for things like auto-completion and context aware editing to be based on the actual state
 of the code instead of heuristics.  The thing is, I was not able to find a good set of
 formal grammars for very many languages.  Vim has a very large set of defined syntaxes
-and writing an interpreter for these is inline with the other project goals.
+and writing an interpreter for these is inline with the other project goals.  I can use these
+syntax definitions with a fairly direct state based lexer.  I just need some way to read
+them in.
 
 ## Vim Commands
 
@@ -54,6 +57,8 @@ This has the side-effect of meaning that the command mode for the editor will ac
 3. Execute command using provided argument translation.
 
 This should allow the command to run using either the traditional vim syntax `:syntax keyword keywordDefinition thisisthekeyword` as well as direct javascript `syntax.keyword("keywordDefinition","thisisthekeyword")`.  Some of the regular expressions for this will end up being complex, but at least their scope is limited and can be done on a case by case basis.
+
+Using the vim command approach I can use the vim definition files to create lexers for a wide variety of file types.
 
 ## Input
 
