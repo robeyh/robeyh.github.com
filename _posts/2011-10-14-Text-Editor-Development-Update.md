@@ -4,6 +4,7 @@ layout: post
 title: Text Editor Development Update
 
 showonfront: false
+hidden: true
 
 ---
 
@@ -12,7 +13,9 @@ First of all, let's start off with a [screenshot of what the rendering test look
 This is a test in which a 4MB file (UTF-32, so equivalent to 1MB of ASCII) is loaded and
 rendered.  It's able to render at 60 frames per second using requestAnimFrame(), though
 given that no updates are occuring this doesn't tell you much other than it's not working
-horribly inefficiently.
+horribly inefficiently.  It could easily render faster, but requestAnimFrame() intelligently
+throttles it.
+
 
 ## Font Rendering and Text Layout in WebGL
 
@@ -24,7 +27,7 @@ benefit of doing it this way is that a pixel provides 32 bits of storage, so I c
 UTF-32 as well as highlighting information in the same pixel.  This is as UTF-32 only
 actually uses 21 bits per character.  
 
-I then load up a font texture (which is just a standard bitmap font)
+I then load up a font texture (which is just a standard bitmap font) using 
 
 All of this loading stuff into textures means that the rendering can all be done in the
 fragment shader.  The first thought, and what many bitmap font renderers seem to do is
@@ -35,8 +38,18 @@ the JavaScript and uploaded to the graphics card for each change.  By using the 
 shader I use 6 vertices to outline the page then each pixel determines which letter it is,
 where in the letter it is and what color that location of the letter is.
 
+
 ## Font Loading
 
+Since WebGL inherently has support for nothing but numbers and arrays of numbers bitmapped
+fonts are the most direct way to get font rendering onto the graphics card.  I could have
+just prerendered a couple of fonts, but then we'd be rather limited.  So instead I wrote
+a small library to load a font and render it to a canvas with even spacing.  It can then
+be loaded onto the graphics card as a texture and used by the shaders to render fonts. It
+can current load fonts from either the local system or use any of the 
+[web fonts available from Google](http://www.google.com/webfonts).  There are some sizing
+issues, and since there is quite literally no font metrics other than width built into
+JavaScript there is some work to be done here.  With some baseline fiddling (as in, a little more up... a little more down) this works for now. 
 
 
 ## Syntax Highlighting
@@ -62,11 +75,26 @@ This has the side-effect of meaning that the command mode for the editor will
 accept either vim commands (assuming that a conversion exists) as well as 
 javascript macros.  This will be done through a simple construct + algorithm:
 
-/////TODO
+```javascript
+syntax = {
+  keyword: function( groupName, keywords ){
+    //function to run for command
+  },
+  _keyword_arguments: {
+    //regex mappings to arguments
+  }
+};
+```
 
-## More Syntax Highlighting
+1. Start at beginning.
+2. Is current word a valid variable name?  Does it exist in our command dictionary?  If so go to next word and repeat this step.
+3. Execute command using provided argument translation.
 
-
+This should allow the command to run using either the traditional vim syntax 
+`:syntax keyword keywordDefinition thisisthekeyword` as well as direct 
+javascript `syntax.keyword("keywordDefinition","thisisthekeyword")`.  Some of the regular
+expressions for this will end up being complex, but at least their scope is limited and
+can be done on a case by case basis.
 
 ## Input
 
@@ -97,10 +125,16 @@ not produced a library solely for parsing.  I could take pieces, I've looked at 
 for each, but each seems to define it's own syntax for defining... syntax.  Using a more
 established standard instead of reinventing all of this syntax files makes sense.
 
-So, sadly, things are taking more of a "not-developed-here" tack than I'd hoped.
+So, sadly, things are taking more of a "not-developed-here" tack than I'd hoped.  Of course,
+there are existing approached to use for inspiration.
 
 * WebGL text-rendering library
+* Font to Bitmap library
 * Vim Command Interpreter
 * Vim Compatible Syntax Highlighting
 
+There are some things that I will not have to develop libraries for:
 
+* Regular Expressions
+* Matrix Operations
+* Syntax Files themselves
