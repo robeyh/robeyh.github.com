@@ -66,6 +66,10 @@ body {
   font-family: 'AurulentSans', 'AurulentSansRegular', sans-serif;
 }
 
+.postcontent h2 {
+  font-family: 'Alice', serif;
+}
+
 .postfooter {
 }
 
