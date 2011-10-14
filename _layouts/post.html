@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ page.title }}</title>
+  <!--<link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy' rel='stylesheet' type='text/css'>-->
+  <link href='http://fonts.googleapis.com/css?family=Alice' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="static/aurulentsans.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" type="text/css" href="static/blog.css" />
+</head>
+<body>
+
+<!-- temporarily return false here until dropdown stuff is done -->
+<div id="feeds" class="feeds" onmouseover="return false; expandfeeds()" onmouseout="return false; collapsefeeds()">
+</div>
+
+<div class="header">
+  <h1>FlamingLunchbox</h1> - Adventures in Independent Development
+</div>
+
+<div class="content">
+
+{{content}}
+
+</div>
+
+<div id="footer" class="footer">
+Copyright 2010-2011 FlamingLunchbox
+</div>
+</body>
+</html>
