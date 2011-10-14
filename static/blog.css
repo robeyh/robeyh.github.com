@@ -18,13 +18,19 @@ body {
 }
 
 .header {
-  font-family: 'AurulentSansBold';
+  font-family: 'AurulentSansBold', 'AurulentSans', 'AurulentSansRegular', sans-serif;
   font-weight: bold;
   background-color: #011152;
   color: white;
   position: relative;
   width: 900px;
   margin: 0px auto;
+}
+
+.header h1 {
+  font-family: 'AurulentSansBold', 'AurulentSans', 'AurulentSansRegular', sans-serif;
+  font-weight: bold;
+  size: 120%;
 }
 
 .twitter {
@@ -57,7 +63,7 @@ body {
 .postcontent {
   width: 75ex;
   float: right;
-  font-family: 'Alice';
+  font-family: 'AurulentSans', 'AurulentSansRegular', sans-serif;
 }
 
 .postfooter {
@@ -73,12 +79,13 @@ body {
   text-align: center;
 }
 
-h2.posttitle {
+h1.posttitle {
+  font-family: 'Alice', serif;
   border-bottom: 5px ridge white;
   margin-top: 0px;
 }
 
-h2.posttitle a {
+h1.posttitle a {
   text-decoration: none;
 }
 
