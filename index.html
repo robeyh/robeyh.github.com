@@ -10,7 +10,7 @@ title: FlamingLunchbox
     {{ post.content }}
   </div>
   <div class="postmetadata">
-    {{ post.date }}
+    {{ post.date | date: "%B %d, %Y" }}
   </div>
   <div class="postfooter"> </div>
 </div>
