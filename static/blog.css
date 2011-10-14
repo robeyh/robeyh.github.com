@@ -1,10 +1,86 @@
 
 body {
-  background-image: url('/static/FlamingLunchbox_background.png');
-  background-repeat: no-repeat;
-  font-family: 'Poly', serif;
+  font-family: 'Alice', serif;
+  padding: 0px;
+  background-color: #011152;
+  margin: 0px;
 }
 
-h3.posttitle {
-  border-bottom: 4px dotted black;
+.content {
+  background-color: #1c328c;
+}
+
+.feeds {
+  background-color: #ff7004;
+  height: 34px;
+  overflow: hidden;
+  color: white;
+}
+
+.header {
+  font-family: 'AurulentSansBold';
+  font-weight: bold;
+  background-color: #011152;
+  color: white;
+  position: relative;
+  width: 900px;
+  margin: 0px auto;
+}
+
+.twitter {
+  position: relative;
+  top: -312px;
+  margin: 0px auto;
+}
+
+.post {
+  width: 110ex;
+  padding: 1em;
+  margin: 1em auto;
+  color: white;
+  overflow: auto;
+}
+
+.postmetadata {
+  float: left;
+  width: 20ex;
+}
+
+.post a {
+  color: white;
+}
+
+.post p {
+  margin-top:0px;
+}
+
+.postcontent {
+  width: 75ex;
+  float: right;
+  font-family: 'Alice';
+}
+
+.postfooter {
+}
+
+.footer {
+  width: 80ex;
+  margin: 0px auto;
+  background-color: #011152;
+  color: white;
+  padding: 2em 4em;
+  text-size: 40%;
+  text-align: center;
+}
+
+h2.posttitle {
+  border-bottom: 5px ridge white;
+}
+
+h2.posttitle a {
+  text-decoration: none;
+}
+
+hr {
+  visibility: hidden;
 }

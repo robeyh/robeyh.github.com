@@ -2,12 +2,143 @@
 <html>
 <head>
   <title>{{ page.title }}</title>
-  <link href='http://fonts.googleapis.com/css?family=Poly' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="/static/blog.css" />
+  <!--<link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy' rel='stylesheet' type='text/css'>-->
+  <link href='http://fonts.googleapis.com/css?family=Alice' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="static/aurulentsans.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" type="text/css" href="static/blog.css" />
+
+  <!--<script type="text/javascript" src="libs/firmin-1.0.0-min.js"></script>-->
+  <script type="text/javascript" src="libs/janis.min.js"></script>
+  <script type="text/javascript">
+
+function $id( elementid ){
+  return document.getElementById(elementid);
+}
+
+function $a( eid, anim, duration){
+  anim['duration'] = duration;
+  Janis( $id(eid) ).animate( anim );
+}
+
+function expandfeeds(){
+
+  $a( 'feeds', { 'height': '310px' }, 1000 );
+  $a( 'twitter', { 'top': '0px' }, 1000 );
+
+  /*
+  emile('feeds', 'height: 310px', {duration: 1000});
+  emile('twitter', 'top: 0px', {duration: 1000});
+  */
+
+  /*
+  Firmin.animate(
+    document.getElementById("feeds"), {
+      height: '310px'
+    }, "1s");
+
+  Firmin.animate(
+    document.getElementById("twitter"), {
+      top: '0px'
+    }, "1s");
+
+  */
+
+}
+
+function collapsefeeds(){
+
+  Janis( $id('feeds') ).animate({
+    'height': '34px',
+    'duration': 1000
+  });
+
+  Janis( $id('twitter') ).animate({
+    'top': '-312px',
+    'duration': 1000
+  });
+
+  /*
+  emile('feeds', 'height: 2em', {duration: 1000});
+  emile('twitter', 'top: -311px', {duration: 1000});
+  */
+
+  /*
+  Firmin.animate(
+    document.getElementById("feeds"), {
+      height: '2em'
+    }, "1s");
+
+  Firmin.animate(
+    document.getElementById("twitter"), {
+      top: '-311px'
+    }, "1s");
+  */
+
+}
+
+  </script>
 </head>
 <body>
 
-{{ content }}
+<!-- temporarily return false here until dropdown stuff is done -->
+<div id="feeds" class="feeds" onmouseover="return false; expandfeeds()" onmouseout="return false; collapsefeeds()">
+<!--
+  <div class="links" id="links" style="width: 300px;">
+<span style="display: block; width: 300px; text-align: center; margin: 0px auto; vertical-align: bottom; height: 32px; font-size: 20px;">Twitter</span>
+  </div>
+  <div class="twitter" id="twitter" style="width: 300px;">
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 30000,
+  width: 300,
+  height: 220,
+  theme: {
+    shell: {
+      background: 'none',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#011152',
+      color: '#ffffff',
+      links: '#ff7004'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: true,
+    hashtags: true,
+    timestamp: true,
+    avatars: false,
+    behavior: 'all'
+  }
+}).render().setUser('flaminglunchbox').start();
+</script>
+<span style="display: block; width: 300px; text-align: center; margin: 0px auto; vertical-align: bottom; height: 32px; font-size: 20px; padding-top: 4px; ">Twitter</span>
+<img src="static/twitter.png" style="display: block; width: 172px; margin: 0px auto;" />
+</div>
+-->
+</div>
 
+
+
+<div class="header">
+  <h1>FlamingLunchbox</h1> - Adventures in Independent Development
+</div>
+
+<div class="content">
+
+{{content}}
+
+</div>
+
+<div id="footer" class="footer">
+Copyright (c) 2010-2011 by Robey Holderith
+</div>
 </body>
 </html>
