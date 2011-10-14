@@ -4,7 +4,7 @@ title: FlamingLunchbox
 ---
 
 {% for post in site.posts %}
-{% if hidden or showonfront == 'false' %}
+{% if post.hidden or post.showonfront == 'false' %}
 {% else %}
 <div class="post">
   <div class="postcontent"> 
