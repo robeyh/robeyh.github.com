@@ -56,7 +56,9 @@ This has the side-effect of meaning that the command mode for the editor will ac
 2. Is current word a valid variable name?  Does it exist in our command dictionary?  If so go to next word and repeat this step.
 3. Execute command using provided argument translation.
 
-This should allow the command to run using either the traditional vim syntax `:syntax keyword keywordDefinition thisisthekeyword` as well as direct javascript `syntax.keyword("keywordDefinition","thisisthekeyword")`.  Some of the regular expressions for this will end up being complex, but at least their scope is limited and can be done on a case by case basis.
+This should allow the command to run using either the traditional vim syntax:
+`:syntax keyword keywordDefinition thisisthekeyword` as well as direct javascript:
+`syntax.keyword("keywordDefinition","thisisthekeyword")`.  Some of the regular expressions for this will end up being complex, but at least their scope is limited and can be done on a case by case basis.
 
 Using the vim command approach I can use the vim definition files to create lexers for a wide variety of file types.
 
@@ -85,3 +87,12 @@ There are some things that I will not have to develop libraries for:
 * Regular Expressions
 * Matrix Operations
 * Syntax Files themselves
+
+What I have mostly done and working is text handling in the WebGL shaders as well as the automated generation and loading of the textures needed by WebGL.
+
+My next target is to get Vim command interpretation working primitively, then loading up the
+syntax files and highlighting some text.
+
+## Looking for Names
+
+Oh, and don't forget, we're looking for name recommendations over in the [Text Editor Google Group](http://groups.google.com/group/flbox-texteditor).  Here in a week or so we're going to have to start voting on names.
