@@ -3,13 +3,16 @@ layout: post
 
 title: Text Editor Development Update
 
-published: false
+showonfront: false
 
 ---
 
 First of all, let's start off with a [screenshot of what the rendering test looks like in Chrome](/images/2011/10/14/shadertest3.png).
 
-This is a 4MB file (UTF-32, so equivalent to 1MB of ASCII).
+This is a test in which a 4MB file (UTF-32, so equivalent to 1MB of ASCII) is loaded and
+rendered.  It's able to render at 60 frames per second using requestAnimFrame(), though
+given that no updates are occuring this doesn't tell you much other than it's not working
+horribly inefficiently.
 
 ## Font Rendering and Text Layout in WebGL
 
