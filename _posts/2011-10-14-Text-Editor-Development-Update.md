@@ -42,14 +42,14 @@ This has the side-effect of meaning that the command mode for the editor will ac
 
 ```javascript
 
-    syntax = {
-      keyword: function( groupName, keywords ){
-        //function to run for command
-      },
-      _keyword_arguments: {
-        //regex mappings to arguments
-      }
-    };
+syntax = {
+  keyword: function( groupName, keywords ){
+    //function to run for command
+  },
+  _keyword_arguments: {
+    //regex mappings to arguments
+  }
+};
 ```
 
 1. Start at beginning.
