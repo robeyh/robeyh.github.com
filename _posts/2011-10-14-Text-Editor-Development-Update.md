@@ -28,7 +28,11 @@ Since WebGL inherently has support for nothing but numbers and arrays of numbers
 
 ## Syntax Highlighting
 
-I was originally split between doing more formal parsing of the text, which would allow for things like auto-completion and context aware editing to be based on the actual state of the code instead of heuristics.  The thing is, I was not able to find a good set of formal grammars for very many languages.  Vim has a very large set of defined syntaxes and writing an interpreter for these is inline with the other project goals.
+I was originally split between doing more formal parsing of the text, which would allow
+for things like auto-completion and context aware editing to be based on the actual state
+of the code instead of heuristics.  The thing is, I was not able to find a good set of
+formal grammars for very many languages.  Vim has a very large set of defined syntaxes
+and writing an interpreter for these is inline with the other project goals.
 
 ## Vim Commands
 
@@ -36,7 +40,7 @@ Vim has a very large set of runtime files using it's internal command system.  O
 
 This has the side-effect of meaning that the command mode for the editor will accept either vim commands (assuming that a conversion exists) as well as javascript macros.  This will be done through a simple construct + algorithm: 
 
-    javascript
+`javascript
 
     syntax = {
       keyword: function( groupName, keywords ){
