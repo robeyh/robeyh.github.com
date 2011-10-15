@@ -94,4 +94,7 @@ syntax files and highlighting some text.
 
 Oh, and don't forget, we're looking for name recommendations over in the [Text Editor Google Group](http://groups.google.com/group/flbox-texteditor).  Here in a week or so we're going to have to start voting on names.
 
+## Comments
+
+No comments on the blog yet, so to discuss there's a [corresponding announcement in the group](https://groups.google.com/d/topic/flbox-texteditor/egbze2xRqRg/discussion).
 
