@@ -2,7 +2,7 @@
 layout: post
 
 title: Text Editor Development Update
-
+excerpt: "First of all, let's start off with a [screenshot of what the rendering test looks like in Chrome]. This is a test in which a 4MB file (UTF-32, so equivalent to 1MB of ASCII) is loaded and rendered..."
 ---
 
 First of all, let's start off with a [screenshot of what the rendering test looks like in Chrome](/images/2011/10/14/shadertest3.png).

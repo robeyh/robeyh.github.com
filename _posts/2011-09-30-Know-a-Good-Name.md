@@ -1,5 +1,6 @@
 ---
-title: Know a Good Name for a Programmer's Text Editor?
+title: "Know a Good Name for a Programmer's Text Editor?"
+excerpt: "Discussions have begun! Chatter is now underway regarding what to name this text-editor."
 ---
 
 *Forum:*  Discussions have begun! Chatter is now underway regarding what to name this text-editor.  There are several suggestions in there, and we would love to hear your ideas.  The sooner we have a good collection of name ideas, the sooner we can come to a vote about what to name it.  The sooner we can name it the sooner we can work on logos.  Please check out the flbox-texteditor at Google Groups to add your two cents on it.

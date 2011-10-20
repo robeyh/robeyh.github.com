@@ -1,5 +1,6 @@
 ---
 title: Updates on the Text Editor Project
+excerpt: "Our Kickstarter project is now fully underway.  We are currently determining the best method of loading fonts onto..."
 ---
 
 Our Kickstarter project is now fully underway.  We are currently determining the best method of loading fonts onto the GPU and figuring out a shader to display text with.  At the moment arbitrary fonts, including any webfonts, can be used.  Currently we are working on syntax highlighting, trying to determine whether to use grammars or regular expressions to implement syntax highlighting.
