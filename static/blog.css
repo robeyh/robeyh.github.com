@@ -53,8 +53,11 @@ body {
 }
 
 .postmetadata {
-  float: left;
+  position: relative;
+  left: 0px;
+  top: 0px;
   width: 20ex;
+  margin: 0px;
 }
 
 .post a {
@@ -68,7 +71,10 @@ body {
 .postcontent {
   width: 75ex;
   float: right;
+  clear: none;
   font-family: 'AurulentSans', 'AurulentSansRegular', sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
 
 .postcontent h2 {
