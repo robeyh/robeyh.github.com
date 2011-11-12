@@ -17,7 +17,7 @@ Hopefully we caught all of the names that were brought up.  If we get suggestion
 
 It's been a difficult week to program.  On top of other stresses, it seems like everytime I need to reference something the network is down (between sharing the wireless, a router that needs an upgrade and a residential cable modem in a college neighborhood); something about the weather change seems to be giving things issues, though I've finally found settings that seem to provide a stable connection. 
 
-I'm still plodding along with building a working lexer that can apply Vim's slightly peculiar approach.  I've resisted just porting over the Vim code to Javascript as it seems to me that there's a lot of extra baggage that it would bring.  But at the same time trying to build things ina consistent style that will allow for things to be extended in a sensical way makes my brain hurt somedays.  I'm getting close, it seems to be working and once I've got it done enough to get a screenshot you can bet I'll be bragging about it here.
+I'm still plodding along with building a working lexer that can apply Vim's slightly peculiar approach.  I've resisted just porting over the Vim code to Javascript as it seems to me that there's a lot of extra baggage that it would bring.  But at the same time trying to build things in a consistent style that will allow for things to be extended in a sensical way makes my brain hurt somedays.  I'm getting close, it seems to be working and once I've got it done enough to get a screenshot you can bet I'll be bragging about it here.
 
 Oh, and I've integrated Disqus comments into the blog if you click on the entry title.
 
