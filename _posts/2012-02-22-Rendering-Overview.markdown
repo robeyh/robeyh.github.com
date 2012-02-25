@@ -9,12 +9,12 @@ title: Icon Selection and Rendering Overview
 Betwixt Icon Selection
 ======================
 
-Rachael (@pythonliving) has been busy creating various icon options for voting.  At this point we have a couple to share with you.  Please feel free to submit your own ideas/creations, as well as ideas you would like us to bring to fruition.
+Rachael (@pythonliving) has been busy creating various icon options for voting. At this point we have a couple to share with you. Please feel free to submit your own ideas/creations, as well as ideas you would like us to bring to fruition.
 
 Icons
 -----
 
-All submissions for icon design will need to be submitted by March 12th.  Voting will begin on the 16th and go through the 19th.  Voting will be processed similar to name voting, and so will take a couple of days to prepare.  Once an icon is selected we will begin swag creation.  At that time everyone will be getting an email verifying address for mailing and other various questions as necessary (T-shirt size, and so on).
+All submissions for icon design will need to be submitted by March 12th. Voting will begin on the 16th and go through the 19th.  Voting will be processed similar to name voting, and so will take a couple of days to prepare.  Once an icon is selected we will begin swag creation. At that time everyone will be getting an email verifying address for mailing and other various questions as necessary (T-shirt size, and so on).
 
 
 Betwixt Update
@@ -24,7 +24,7 @@ Betwixt Update
 Font Bitmap Overview
 --------------------
 
-WebGL does not support fonts at the moment.  However, since we're looking to use monospaced fonts this isn't
+WebGL does not support fonts at the moment. However, since we're looking to use monospaced fonts this isn't
 too much of an issue.  We do need to somehow create a bitmap font though that can be loaded in as a texture.
 We can do this by rendering onto a Canvas element using JavaScript.  Sadly there is no standard way for
 JavaScript to access font information at the moment, with the exception being the width of rendered text.  I have
