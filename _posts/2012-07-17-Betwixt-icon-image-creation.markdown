@@ -25,7 +25,7 @@ My hope is to find a font that will make the icon stand out more.  That is mostl
 ![Iceland](/images/2012/07/17/Iceland.PNG)
 
 
-Another aspect of the final image I wanted to mention is that for T-Shirt and other such productions we'll be going with a duo-tone icon.  In two weeks I’ll also be posting along with the final version, a copy of the duo-tone version so those receiving T-Shirts or Bags will have an idea of what to expect.  
+Another aspect of the final image I wanted to mention is that for T-Shirt and other such productions we'll be going with a duo-tone icon.  In two weeks I'll also be posting along with the final version, a copy of the duo-tone version so those receiving T-Shirts or Bags will have an idea of what to expect.  
 
 As I mentioned in my last post, any comments will take high precedence in influencing our final decisions.  So, please raise your voice.  I'll see you in two weeks, when I post the final version of the Icon.  Thanks again for your support.  
 
