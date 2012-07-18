@@ -11,7 +11,7 @@ Sorry for the late post.  I am currently working full time at another job and I 
 
 They are very basic.   This is mainly showing the difference between a solid black or grey background, some different fonts, and various shading differences.  I cycled through a fair portion of the different texture scripts for the background but nothing beyond the cubes of the original look anything close to decent.  I am a little concerned that this style is not all that uncommon, so I want to make sure I can do something to make it different.  
 
-My hope is to find a font that will make the icon stand out more.  That is mostly what today’s post is about.  If you have any suggestions for good free fonts that might work well here, please put them forward.  I have found a couple of free for use ‘B’ examples that I think might work.  
+My hope is to find a font that will make the icon stand out more.  That is mostly what today's post is about.  If you have any suggestions for good free fonts that might work well here, please put them forward.  I have found a couple of free for use 'B' examples that I think might work.  
 
 ![Amethysta](/images/2012/07/17/Amethysta.PNG)
 ![Anonymous Pro](/images/2012/07/17/Anonymous%20Pro.PNG)
@@ -25,8 +25,9 @@ My hope is to find a font that will make the icon stand out more.  That is mostl
 ![Iceland](/images/2012/07/17/Iceland.PNG)
 
 
-Another aspect of the final image I wanted to mention is that for T-Shirt and other such productions we’ll be going with a duo-tone icon.  In two weeks I’ll also be posting along with the final version, a copy of the duo-tone version so those receiving T-Shirts or Bags will have an idea of what to expect.  
-As I mentioned in my last post, any comments will take high precedence in influencing our final decisions.  So, please…raise your voice.  I’ll see you in two weeks, when I post the final version of the Icon.  Thanks again for your support.  
+Another aspect of the final image I wanted to mention is that for T-Shirt and other such productions we'll be going with a duo-tone icon.  In two weeks I’ll also be posting along with the final version, a copy of the duo-tone version so those receiving T-Shirts or Bags will have an idea of what to expect.  
+
+As I mentioned in my last post, any comments will take high precedence in influencing our final decisions.  So, please raise your voice.  I'll see you in two weeks, when I post the final version of the Icon.  Thanks again for your support.  
 
 I'll be sticking with this base theme, but going in a couple of minorly different directions for the next two weeks.  On July 13th I'll be posting another entry here on the FLB blog showing my new designs.  I'll make sure it gets posted on the Kickstarter update page and the forum, so everyone gets a chance to see the ideas.  At this point you can provide any final input you have, regarding which design I should focus on.  Any blog comments will heavily influence our direction, so make sure to watch for the update.  We'll likely not do another round of voting unless a fork in design occurs.
 
